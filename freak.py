@@ -24,7 +24,7 @@ class FreakisChic(object):
 		else:
 			print 'you server %s is vulnerable to FREAK' %(self._host)
 def main():
-	parser = argparse.ArgumentParser("Interaction with linkedin account")
+	parser = argparse.ArgumentParser("Check if hostname give in argument is vulnerable to FREAK")
 	parser.add_argument("--host", help="hostname you wants to check", action='store')
 	parser.add_argument("--port", help="Port running the service ", type=int, default='443', action='store')
 	parser.add_argument("--check", help="Check for freak vulnerability", action='store_true')

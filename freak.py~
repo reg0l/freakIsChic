@@ -20,9 +20,9 @@ class FreakisChic(object):
 		try:		
 			ssl_sock.do_handshake()
 		except SSL.Error:
-			print 'The host: %s is not vulnerable for FREAK vuln' %(self._host)
+			print 'The host: %s is not vulnerable to FREAK vuln' %(self._host)
 		else:
-			print 'you server %s is vulnerable' %(self._host)
+			print 'you server %s is vulnerable to FREAK' %(self._host)
 def main():
 	parser = argparse.ArgumentParser("Interaction with linkedin account")
 	parser.add_argument("--host", help="hostname you wants to check", action='store')
